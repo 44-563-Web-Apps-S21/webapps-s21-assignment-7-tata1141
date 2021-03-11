@@ -114,7 +114,12 @@
           "image15", "image16", "image17", "image18", "image19", "image20",
            "image21", "image22", "image23", "image24"]
     var clickCount=0;
-    var treasureLocation = 18;
+    // var treasureLocation = 18;
+    var treasureLocation=Math.floor(Math.random()*ids.length);
+    const newGame=()=>{
+        clickCount=0;
+        treasureLocation=Math.floor(Math.random()*ids.length);
+    }
     function makeGuess(temp)
     {
       clickCount=clickCount+1;

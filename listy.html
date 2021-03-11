@@ -52,12 +52,15 @@
 		let len = document.getElementsByClassName("listy").length
 		i=0
 		if (len > 9) {
-			for (let listItem of listyItems) {
+			for (let listItem of listyItems)
+             {
 				
-				if(listItem.innerHTML==ipvalue){
+				if(listItem.innerHTML==ipvalue)
+                {
 					listyItems[i].remove();
 				}
-				else{
+				else
+                {
                     let randomNo=Math.floor(Math.random()*listyItems.length) 
 					listyItems[randomNo].remove();
 				}

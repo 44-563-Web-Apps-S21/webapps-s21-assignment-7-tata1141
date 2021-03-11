@@ -38,7 +38,7 @@
 
     function startTime() {
         var rands = Math.floor(Math.random() * 10) + 2;
-        for (let i = 0; i < rands+1; i++)
+        for (let i = 0; i < 4; i++)
             setTimeout(() => {
                 document.getElementById('countdown').innerHTML = i
             }, (rands - i) * 1000)
